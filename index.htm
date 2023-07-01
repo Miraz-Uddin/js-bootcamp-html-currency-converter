@@ -35,22 +35,47 @@
           <h1 class="title mt-5">Currency Converter</h1>
           <div id="messageDisplay"></div>
           <div class="form">
-            <input type="text" id="fromAmount" placeholder="0" />
+            <input type="text" id="fromAmount" placeholder="108.13" />
             <select id="fromCountry">
-              <option value="BDT">Bangladesh (Bangladeshi taka)</option>
+              <option value="BDT" selected="true">
+                Bangladeshi Taka (BDT)
+              </option>
+              <option value="EUR">Euro (EUR)</option>
+              <option value="SAR">Saudi Riyal (SAR)</option>
+              <option value="USD">US Dollar (USD)</option>
             </select>
           </div>
           <div class="form">
-            <input type="text" id="toAmount" placeholder="0" />
+            <input type="text" id="toAmount" placeholder="1" />
             <select id="toCountry">
-              <option value="USD">United States of America (USD)</option>
+              <option value="BDT">Bangladeshi Taka (BDT)</option>
+              <option value="EUR">Euro (EUR)</option>
+              <option value="SAR">Saudi Riyal (SAR)</option>
+              <option value="USD" selected="true">US Dollar (USD)</option>
             </select>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- Footer Starts -->
+    <footer
+      style="position: fixed; bottom: 0; left: 50%; transform: translateX(-50%)"
+    >
+      <p class="text-white text-center">
+        Copyright <span id="year"></span> ©
+        <span><span id="company_name"></span></span>
+      </p>
+    </footer>
+    <!-- Footer Ends -->
+
     <!-- Bootstrap JS -->
     <script src="./public/assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+      (() => {
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+        document.getElementById("company_name").innerHTML = "Md. Miraz Uddin";
+      })();
+    </script>
   </body>
 </html>
