@@ -123,6 +123,15 @@ input,
 select {
     border: 1px solid #ccc;
     text-align: center;
+    border-radius: 5px;
+}
+
+input {
+    min-width: 396px;
+    border: 1px solid #ccc;
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 5px;
 }
 
 #amount {
@@ -133,7 +142,6 @@ select {
 .form select {
     flex: 1;
     padding-left: 8px;
-    min-width: 500px;
 }
 
 /* Result */
@@ -141,4 +149,14 @@ select {
 #symbol {
     max-width: 25%;
     text-align: center;
+}
+
+.form label {
+    color: #fff;
+    padding: 10px;
+}
+
+.messageDisplay .card {
+    background: #002c2a;
+    color: #fff;
 }
